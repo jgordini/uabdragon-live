@@ -25,7 +25,7 @@
 
 ## Installation
 
-1. **Download:** Download the latest release of the UAB Dragon theme as a `.zip` file from the [GitHub repository](https://github.com/uab/uabdragon). *Do not clone the repository directly into your `themes` folder unless you are actively developing the theme.*
+1. **Download:** Download the latest release of the UAB Dragon theme as a `.zip` file from the [GitHub repository](https://github.com/jgordini/uabdragon-live). *Do not clone the repository directly into your `themes` folder unless you are actively developing the theme.*
 2. **Upload:** In your WordPress admin dashboard, go to **Appearance > Themes > Add New**. Click "Upload Theme" and select the downloaded `.zip` file.
 3. **Activate:** Once uploaded, click "Activate" to enable the UAB Dragon theme.
 
