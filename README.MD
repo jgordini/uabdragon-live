@@ -1,170 +1,246 @@
 # UAB Dragon - A Tailwind CSS Block Theme for WordPress
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Status: Under Construction](https://img.shields.io/badge/Status-Under%20Construction-red)](https://github.com/uab/uabdragon)
+> **🚧 UNDER CONSTRUCTION 🚧**  
+> This theme is currently in active development and not yet ready for production use.
+> Expected release: Q2 2025
 
-**UAB Dragon** is a modern, accessible, and customizable WordPress block theme built with the power of Tailwind CSS v4. It leverages the best of both [TailPress](https://github.com/jeffreyvr/tailpress) and [Frost](https://github.com/wpe-bp/frost-wp), incorporating UAB's (University of Alabama at Birmingham) branding guidelines for a unique and cohesive look. This theme provides a solid foundation for building beautiful, responsive websites using the WordPress block editor (Gutenberg).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+**UAB Dragon** is a modern, accessible, and customizable WordPress block theme built with **Tailwind CSS v4**. It integrates the best features of [TailPress](https://github.com/jeffreyvr/tailpress) and [Frost](https://github.com/wpe-bp/frost-wp), tailored to the University of Alabama at Birmingham (UAB) branding guidelines. This theme empowers users to create responsive, branded websites effortlessly using the WordPress block editor (Gutenberg).
+
+---
 
 ## Key Features
 
-* **Tailwind CSS v4 Integration:** UAB Dragon uses the latest Tailwind CSS (v4) for rapid, utility-first styling. This means you can easily customize the theme's appearance using Tailwind's extensive class system directly within the WordPress editor.
-* **Full Block Editor Support:** Designed from the ground up for the WordPress block editor, ensuring seamless compatibility and a smooth editing experience. Take full advantage of core blocks and extend the editor with your own custom blocks.
-* **UAB Branding:** Incorporates UAB's official color palette (UAB Green, Campus Green, Loyal Yellow, Blaze Gold), fonts (Aktiv Grotesk and Kulturista), and spacing guidelines, providing a consistent brand identity.
-* **Accessibility-First Design:** Built with accessibility in mind, adhering to WCAG guidelines to ensure your website is usable by everyone. Includes proper semantic HTML, ARIA attributes, and keyboard navigation support.
-* **Performance Optimized:** Focuses on performance with minimal CSS and JavaScript, resulting in fast loading times and an excellent user experience. Uses Vite for asset bundling and optimization.
-* **Starter Patterns:** Comes with a collection of pre-designed block patterns, inspired by Frost, to help you quickly build common page sections like headers, footers, call-to-actions, pricing tables, team sections, and more. These patterns are all adapted to UAB's branding.
-* **Customizable `theme.json`:** Easily control global styles, color palettes, font sizes, and layout settings through the `theme.json` file. This allows for consistent styling across your entire site.
-* **Developer-Friendly:** Provides a clean and well-organized codebase, making it easy to extend and customize the theme to your specific needs.
-* **Responsive Design:** Fully responsive out of the box, ensuring your website looks great on all devices, from mobile phones to large desktops.
-* **SEO Optimized:** Uses semantic HTML and best practices for search engine optimization.
+- **Tailwind CSS v4 Integration**: Leverage Tailwind's utility-first framework for rapid styling directly in the block editor.
+- **Full Block Editor Support**: Optimized for Gutenberg with seamless core block compatibility and extensibility.
+- **UAB Branding**: Incorporates UAB's official colors, fonts (Aktiv Grotesk and Kulturista), and spacing for a consistent identity.
+- **Accessibility-First Design**: Adheres to **WCAG 2.1 AA** guidelines, ensuring usability with semantic HTML, ARIA attributes, and keyboard navigation.
+- **Performance Optimized**: Minimal CSS/JS footprint, powered by Vite for fast load times.
+- **Starter Patterns**: Pre-designed block patterns (e.g., headers, footers, pricing tables) styled for UAB branding.
+- **Customizable `theme.json`**: Control global styles, colors, fonts, and layouts effortlessly.
+- **Developer-Friendly**: Clean, organized codebase for easy customization.
+- **Responsive Design**: Looks great on all devices, from mobile to desktop.
+- **SEO Optimized**: Built with semantic HTML and best practices for search engines.
+
+---
 
 ## Prerequisites
 
-* **WordPress:** Requires WordPress 5.9 or later (6.0+ recommended). Fully compatible with the block editor.
-* **Node.js and npm:** Required for development and building assets. (Node.js 16+ and npm 8+ recommended).
-* **PHP:** Requires PHP 7.4 or later (8.0+ recommended).
+- **WordPress**: Minimum version **5.9**, recommended **6.0+** for full block editor features.
+- **Node.js and npm**: Required for development (Node.js 16+, npm 8+ recommended).
+- **PHP**: Minimum version **7.4**, recommended **8.0+**.
+
+---
 
 ## Installation
 
-1. **Download:** Download the latest release of the UAB Dragon theme as a `.zip` file from the [GitHub repository](https://github.com/jgordini/uabdragon-live). *Do not clone the repository directly into your `themes` folder unless you are actively developing the theme.*
-2. **Upload:** In your WordPress admin dashboard, go to **Appearance > Themes > Add New**. Click "Upload Theme" and select the downloaded `.zip` file.
-3. **Activate:** Once uploaded, click "Activate" to enable the UAB Dragon theme.
+1. **Download**: Grab the latest release `.zip` from the [GitHub Releases page](https://github.com/uab/uabdragon/releases).
+2. **Upload**: In WordPress, navigate to **Appearance > Themes > Add New > Upload Theme**, then select the `.zip` file.
+3. **Activate**: Click **Activate** to enable UAB Dragon.
+
+> **Note**: Do not clone the repository directly into `themes` unless developing; use the release `.zip` for production.
+
+---
 
 ## Development
 
-To customize and extend the theme, you'll need to set up a local development environment:
+Set up a local environment to customize the theme:
 
-1. **Clone the Repository:** Clone the repository to your local machine:
-
+1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/jgordini/uabdragon-live.git
+   git clone https://github.com/uab/uabdragon.git /path/to/wp-content/themes/uabdragon
    ```
-   Move the cloned directory into your `wp-content/themes` directory.
+   Move it to your WordPress `themes` directory.
 
-2. **Install Dependencies:** Navigate to the theme directory in your terminal and run:
-
+2. **Install Dependencies**:
    ```bash
+   cd /path/to/wp-content/themes/uabdragon
    npm install
    ```
 
-3. **Start Development Server:** Run the development server with:
-
+3. **Start Development Server**:
    ```bash
    npm run dev
    ```
+   Watches CSS/JS changes with hot reloading.
 
-   This will watch for changes in your CSS and JavaScript files and automatically rebuild them. It also provides hot reloading in your browser.
-
-4. **Build for Production:** When you are ready to deploy your changes, build the optimized assets for production:
-
+4. **Build for Production**:
    ```bash
    npm run build
    ```
+   Generates optimized assets in `/css` and `/js`.
+
+---
 
 ## File Structure
 
-- `/assets/` - Contains fonts, images, and other static files
-- `/css/` - Contains compiled CSS files
-- `/js/` - Contains compiled JavaScript files
-- `/parts/` - Template parts for headers, footers, etc.
-- `/patterns/` - Block patterns for pre-designed content sections
-- `/resources/` - Source files for CSS and JavaScript
-- `/templates/` - Page templates for different content types
+```
+uabdragon/
+├── /assets/             # Static files (fonts, images)
+├── /css/                # Compiled CSS (app.css, editor-style.css)
+├── /js/                 # Compiled JavaScript (app.js)
+├── /parts/              # Template parts (e.g., header, footer)
+├── /patterns/           # Block patterns (e.g., pricing tables)
+├── /resources/          # Source CSS/JS files
+├── /templates/          # Page templates (e.g., index.php)
+├── theme.json           # Global style configuration
+├── functions.php        # Theme setup and functions
+└── style.css            # Theme metadata
+```
+
+- **`/assets/`**: Fonts (e.g., Outfit) and static resources.
+- **`/css/`**: Compiled styles for front-end and editor.
+- **`/patterns/`**: Reusable block layouts with UAB branding.
+
+---
 
 ## Customization
 
 ### `theme.json`
 
-The `theme.json` file is the central hub for configuring many aspects of your theme. You can modify:
+Configure global settings in `theme.json`:
 
-* **Colors:** Define your color palette (UAB branding is already included).
-* **Fonts:** Specify font families and sizes.
-* **Layout:** Control content width and wide-width settings.
-* **Block Styles:** Customize the default appearance of various blocks.
-* **Spacing:** Set spacing presets.
-* **Custom CSS Variables:** Create your own CSS custom properties for use in your styles.
+- **Colors**: Add or modify the palette:
+  ```json
+  "color": {
+    "palette": [
+      { "name": "New Color", "slug": "new-color", "color": "#123456" }
+    ]
+  }
+  ```
+- **Fonts**: Adjust font families or sizes:
+  ```json
+  "typography": {
+    "fontFamilies": [
+      { "fontFamily": "New Font, sans-serif", "name": "New Font", "slug": "new-font" }
+    ]
+  }
+  ```
+- **Layout**: Set content widths (default: 890px content, 1340px wide).
 
 ### Tailwind CSS
 
-* **Utility Classes:** Use Tailwind's utility classes directly in the block editor to style elements. For example, add `text-uab-green`, `bg-campus-green`, `py-4`, `font-bold`, etc. to your blocks.
-* **`app.css`:** For more complex styles or custom components, edit the `resources/css/app.css` file. Use `@layer components` and `@layer utilities` to organize your custom styles.
-* **`editor-style.css`:** Customize the styles within the WordPress editor by modifying `resources/css/editor-style.css`. This ensures that the editor preview closely matches the front-end appearance.
-* **`postcss.config.js`:** Configure PostCSS plugins. The theme includes `postcss-import`, `postcss-nested`, and `postcss-nested-ancestors`.
+- **Utility Classes**: Apply directly in the editor, e.g., `<p class="text-uab-green font-bold">Text</p>`.
+- **`resources/css/app.css`**: Add custom styles:
+  ```css
+  @layer components {
+    .custom-button {
+      @apply bg-campus-green text-white py-2 px-4 rounded;
+    }
+  }
+  ```
+- **`resources/css/editor-style.css`**: Match editor and front-end styles.
 
-### PHP Files
+### PHP Templates
 
-* **`functions.php`:** Add custom functions, enqueue scripts and styles, and register theme support features.
-* **Template Files (`index.php`, `single.php`, `page.php`, `404.php`, `header.php`, `footer.php`, `comments.php`):** Modify the structure and layout of your theme's templates.
-* **`template-parts` directory:** Contains reusable template parts like `content.php` (for displaying post content) and potentially others.
+- **`functions.php`**: Add features or enqueue assets.
+- **`header.php`/`footer.php`**: Customize site structure.
 
-### Patterns
+### Creating a Block Pattern
 
-* **`/patterns` Directory:** Add, remove, or modify block patterns. Each pattern is a PHP file that defines a reusable block layout. The `update-pat.php` file is a *utility script* (see below) and is *not* a pattern file.
+Add a new pattern in `/patterns/my-pattern.php`:
+```php
+<?php
+/**
+ * Title: My Custom Pattern
+ * Slug: uabdragon/my-pattern
+ * Categories: uabdragon-custom
+ */
+?>
+<!-- wp:paragraph {"className":"text-campus-green"} -->
+<p class="text-campus-green">Hello, UAB!</p>
+<!-- /wp:paragraph -->
+```
 
-### Utility Script: `update-pat.php`
+---
 
-The `update-pat.php` file is a *one-time use* script designed to help you migrate existing Frost patterns to UAB Dragon's branding and naming conventions. It's *not* part of the theme itself and should be used *carefully* and *only once* during the initial setup/migration:
+## Utility Script: `update-pat.php`
 
-1. **Place the Script:** Put `update-pat.php` in the *root* of your theme directory (where `functions.php` is).
-2. **Run the Script:** Execute it from the command line: `php update-pat.php`.
-3. **Verify:** *Carefully* check the `/patterns` directory to make sure the changes are correct. The script creates backup files (`.bak`), so you can revert if needed.
-4. **Remove:** Once you're satisfied, *delete* `update-pat.php` from your theme. It's not needed after the initial conversion.
+A one-time script to migrate Frost patterns to UAB Dragon:
 
-*Important:* This script is designed for a specific migration task. Do not run it repeatedly, and always back up your files before running it.
+1. Place in the theme root.
+2. Run: `php update-pat.php`.
+3. Verify changes in `/patterns/` (backups saved as `.bak`).
+4. Delete the script after use.
 
-### Adding Google Fonts
+> **Caution**: Use only once during setup; back up files first.
 
-The theme is already configured to load UAB's brand fonts (Aktiv Grotesk and Kulturista) from Google Fonts. If you need to add or change fonts, modify the `uabdragon_google_fonts_url()` function in `functions.php`.
+---
 
 ## Block Patterns
 
-UAB Dragon includes numerous block patterns for:
+Access patterns via the block editor's **Pattern Inserter** (click the "+" icon, then "Patterns" tab). Categories include:
 
-- Headers
-- Footers
-- Call-to-action sections
-- Team displays
-- Pricing tables
-- Testimonials
-- Hero sections
-- And more!
+- `uabdragon-header`
+- `uabdragon-footer`
+- `uabdragon-pricing` (e.g., three-column pricing tables)
+- `uabdragon-hero`
 
-These patterns are specifically styled to match UAB's branding and can be accessed from the pattern inserter in the block editor.
+Insert by selecting a pattern name (e.g., "Pricing table with heading, list, buttons").
+
+---
 
 ## Theme Colors
 
-UAB Dragon comes with UAB's brand colors predefined in the theme.json file:
+Defined in `theme.json` and usable as classes (e.g., `text-uab-green`):
 
-- UAB Green (`--wp--preset--color--uab-green`) - #1A5632
-- Campus Green (`--wp--preset--color--campus-green`) - #90D408
-- Loyal Yellow (`--wp--preset--color--loyal-yellow`) - #FFD400
-- Blaze Gold (`--wp--preset--color--blaze-gold`) - #FDB913
-- White (`--wp--preset--color--white`) - #FFF
-- Black (`--wp--preset--color--black`) - #000
-- Grey (`--wp--preset--color--grey`) - #575757
+| Name          | Slug           | Hex      |
+|---------------|----------------|----------|
+| UAB Green     | `uab-green`    | #1A5632  |
+| Campus Green  | `campus-green` | #90D408  |
+| Loyal Yellow  | `loyal-yellow` | #FFD400  |
+| Blaze Gold    | `blaze-gold`   | #FDB913  |
+| White         | `white`        | #FFF     |
+| Black         | `black`        | #000     |
+| Grey          | `grey`         | #575757  |
+
+**Example**: Apply in the editor:
+```html
+<p class="has-campus-green-color">Green text</p>
+<div class="has-loyal-yellow-background-color">Yellow background</div>
+```
+
+---
 
 ## Performance Considerations
 
-UAB Dragon is built with performance in mind:
+- **Minimal Assets**: Tailwind JIT reduces CSS size.
+- **Benchmarks**: Typical Lighthouse scores: ~95 Performance (desktop, minified assets).
+- **Optimization**: Vite bundles JS/CSS efficiently.
 
-- Minimal CSS output through Tailwind's JIT compiler
-- Optimized JavaScript with Vite
-- Proper asset loading with WordPress enqueue functions
-- Responsive images support
+---
 
 ## Contributing
 
-We welcome contributions to the UAB Dragon theme! If you find a bug, have a feature request, or want to contribute code, please open an issue or submit a pull request on the [GitHub repository](https://github.com/uab/uabdragon).
+Contributions are welcome! To contribute:
 
-## License
+1. Fork the repository.
+2. Create a branch (`git checkout -b feature-name`).
+3. Commit changes (`git commit -m "Add feature"`).
+4. Push (`git push origin feature-name`).
+5. Open a pull request on [GitHub](https://github.com/uab/uabdragon).
 
-UAB Dragon is licensed under the MIT License. See the `LICENSE` file for details.
+See [CONTRIBUTING.md](https://github.com/uab/uabdragon/blob/main/CONTRIBUTING.md) for details.
+
+---
 
 ## Credits
 
-UAB Dragon is built upon:
+- **UAB Web Team**: Theme development and UAB branding integration.
+- **[TailPress](https://github.com/jeffreyvr/tailpress)**: Core Tailwind framework.
+- **[Frost](https://github.com/wpe-bp/frost-wp)**: Block pattern inspiration.
+- **[Tailwind CSS](https://tailwindcss.com/)**: Styling framework.
+- **[Vite](https://vitejs.dev/)**: Build tool.
 
-- [TailPress](https://github.com/jeffreyvr/tailpress) - WordPress theme framework with Tailwind CSS
-- [Frost](https://github.com/wpe-bp/frost-wp) - WordPress block theme
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
-- [Vite](https://vitejs.dev/) - Frontend build tool
+---
+
+## Support
+
+For issues or questions, [open an issue](https://github.com/uab/uabdragon/issues) on GitHub.
+
+---
+
+## License
+
+Licensed under the [MIT License](https://opensource.org/licenses/MIT). See `LICENSE` for details.
