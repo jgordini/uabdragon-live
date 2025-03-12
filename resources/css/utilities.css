@@ -1,0 +1,77 @@
+@utility container {
+    max-width: var(--wp--style--global--wide-size);
+}
+
+@utility alignfull {
+    width: 100vw;
+    margin: 0 calc(50% - 50vw) !important;
+}
+
+@utility alignwide {
+    width: calc(200px + var(--wp--style--global--wide-size));
+
+    img {
+        width: 100%;
+        margin: 0 -100px 0 -100px !important;
+    }
+}
+
+@utility alignnone {
+    height: auto;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@utility aligncenter {
+    margin: 0.5rem auto !important;
+}
+
+/* UAB Brand color utilities */
+.bg-uab-primary {
+    background-color: var(--color-uab-green);
+}
+
+.bg-uab-secondary {
+    background-color: var(--color-campus-green);
+}
+
+.bg-uab-accent {
+    background-color: var(--color-loyal-yellow);
+}
+
+.bg-uab-gold {
+    background-color: var(--color-blaze-gold);
+}
+
+.text-uab-primary {
+    color: var(--color-uab-green);
+}
+
+.text-uab-secondary {
+    color: var(--color-campus-green);
+}
+
+.text-uab-accent {
+    color: var(--color-loyal-yellow);
+}
+
+.text-uab-gold {
+    color: var(--color-blaze-gold);
+}
+
+.border-uab-primary {
+    border-color: var(--color-uab-green);
+}
+
+.border-uab-secondary {
+    border-color: var(--color-campus-green);
+}
+
+.border-uab-accent {
+    border-color: var(--color-loyal-yellow);
+}
+
+.border-uab-gold {
+    border-color: var(--color-blaze-gold);
+}

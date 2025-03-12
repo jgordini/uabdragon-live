@@ -1,0 +1,72 @@
+/* General layout styles */
+article > *:not(.entry-content),
+.entry-content > * {
+    @apply mx-auto;
+}
+
+/* Typography styles */
+.entry-content, .block-editor-block-list__layout {
+    h1 {
+        @apply text-2xl font-bold text-uab-primary;
+    }
+
+    h2 {
+        @apply text-xl font-semibold text-uab-primary;
+    }
+
+    h3 {
+        @apply text-lg font-medium text-uab-primary;
+    }
+
+    p, ul, ol {
+        a {
+            @apply text-uab-primary underline;
+
+            &:hover {
+                @apply text-uab-secondary no-underline;
+            }
+        }
+
+        @apply mb-8;
+    }
+
+    ul:not(.block-editor-block-variation-picker__variations) {
+        li {
+            @apply list-disc list-inside;
+        }
+    }
+
+    ol {
+        li {
+            @apply list-decimal list-inside;
+        }
+    }
+}
+
+/* Block customizations */
+.wp-block-button__link {
+    @apply px-8 py-4 text-base font-bold bg-campus-green text-uab-green rounded-full;
+}
+
+.wp-block-button__link:hover {
+    @apply bg-uab-green text-campus-green;
+}
+
+.wp-block-pullquote blockquote::before {
+    content: '"';
+    @apply absolute text-8xl text-campus-green left-0 -top-4;
+}
+
+/* Default link styles */
+a {
+    @apply text-uab-primary;
+}
+
+a:hover {
+    @apply text-uab-secondary;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-uab-primary;
+}
