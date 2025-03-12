@@ -1,6 +1,7 @@
 # UAB Dragon - A Tailwind CSS Block Theme for WordPress
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Status: Under Construction](https://img.shields.io/badge/Status-Under%20Construction-red)](https://github.com/uab/uabdragon)
 
 **UAB Dragon** is a modern, accessible, and customizable WordPress block theme built with the power of Tailwind CSS v4. It leverages the best of both [TailPress](https://github.com/jeffreyvr/tailpress) and [Frost](https://github.com/wpe-bp/frost-wp), incorporating UAB's (University of Alabama at Birmingham) branding guidelines for a unique and cohesive look. This theme provides a solid foundation for building beautiful, responsive websites using the WordPress block editor (Gutenberg).
 
